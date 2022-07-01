@@ -43,7 +43,7 @@ server.get("/", (req, res) => {
     browser: browser_name,
     OS: OS_name,
     message:
-      "哈哈哈 你是使用" +
+      "你正在使用 " +
       device +
       " 的 " +
       browser_name +
