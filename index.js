@@ -18,6 +18,8 @@ server.get("/", (req, res) => {
   if (user_agent.indexOf("Edge") > -1) browser_name = "Edge";
   else if (user_agent.indexOf("Edg/") > -1) browser_name = "Edge(Chromium)";
   else if (user_agent.indexOf("Opr") > -1) browser_name = "Opera";
+  else if (user_agent.indexOf("BRAVE") > -1 || user_agent.indexOf("Brave") > -1)
+    browser_name = "Brave";
   else if (user_agent.indexOf("Chrome") > -1) browser_name = "Chrome";
   else if (user_agent.indexOf("Trident") > -1) browser_name = "IE";
   else if (user_agent.indexOf("Firefox") > -1) browser_name = "Firefox";
