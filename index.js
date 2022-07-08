@@ -55,6 +55,67 @@ server.get("/", (req, res) => {
   });
 });
 
+server.get("/message", (req, res) => {
+  const data = [
+    {
+      title: "RJ世紀演唱會即將開幕，開唱經典歌曲《我的正規表達式》。",
+      date: "2022-05-27",
+    },
+    {
+      title: "不寫.env引發資安大危機，賠了客戶500萬。",
+      date: "2022-05-28",
+    },
+    {
+      title: "感恩Rosa含辛茹苦打理MONO的大小事，大聲說感謝！",
+      date: "2022-06-02",
+    },
+    {
+      title: "我看3遍都不信，Minci的面試秘訣，十家公司上十五家，真的把大家都嚇傻了！",
+      date: "2022-06-10",
+    },
+    {
+      title: "Bohan參加黑客大會，透露為了維持實力，每天都要Coding 8小時。",
+      date: "2022-06-11",
+    },
+    {
+      title: "「低督低督」絕無僅有的超自然現象，Kyle的神奇摩斯密碼，一聽就讓我充滿希望。",
+      date: "2022-07-01",
+    },
+    {
+      title: "Luca教我Git的28種冷門知識，我靠它們上了哈佛資工系！",
+      date: "2022-07-05",
+    },
+    {
+      title: "Mei的UI設計學，整整流傳了2個世紀，聽完會讓你大喊WOW！",
+      date: "2022-07-05",
+    },
+    {
+      title: "天神降臨！Tilda帶著電梯感應磁扣下凡，解救眾生。",
+      date: "2022-07-08",
+    },
+    {
+      title: "我怎麼沒有早點聽到Peter的MQTT課程，學完直接打通我的Coding任督二脈。",
+      date: "2022-07-11",
+    },
+    {
+      title: "Mindy的React教學，竟成為全人類的存亡關鍵，Day1真的很實用。",
+      date: "2022-07-11",
+    },
+    {
+      title: "驚！《React》分享會失控，Gary教太爛被當眾暴打。",
+      date: "2022-07-12",
+    },
+    {
+      title: "讓專家跌破眼鏡，Joe的Tailwind課程，我忍不住一直聽下去...",
+      date: "2022-07-13",
+    },
+    {
+      title: "Vue大神《Jane》來臨，學員興奮過度不知所措！有圖有真相！",
+      date: "2022-07-13",
+    },
+  ];
+  return res.status(200).json({ data: data });
+});
 //port
 const PORT = process.env.PORT || 3000;
 
