@@ -28,7 +28,10 @@ server.get("/", (req, res) => {
   let device = "PC";
   let OS_name = "不知道的作業系統";
   if (user_agent.indexOf("Win") > -1) OS_name = "Windows";
-  else if (user_agent.indexOf("Iphone") > -1)
+  else if (
+    user_agent.indexOf("Iphone") > -1 ||
+    user_agent.indexOf("iPhone") > -1
+  )
     (OS_name = "iOS"), (device = "手機");
   else if (user_agent.indexOf("Android") > -1)
     (OS_name = "Android"), (device = "手機");
